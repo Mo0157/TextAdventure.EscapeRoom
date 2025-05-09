@@ -1,4 +1,4 @@
-let text = "Willkommen zum Escape-Room Terminal.\nBitte schreibe deinen Namen:";
+let text = "1 Raum, bitte wähle eine aktion\nBitte wähle eine Option:";
 
 let outputElement = document.getElementById("output");
 
