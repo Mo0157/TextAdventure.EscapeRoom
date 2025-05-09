@@ -6,7 +6,7 @@ let i = 0;
 
 let speed = 50;
 
-let cursor = document.createElement("span");
+let cursor  = document.createElement("span");
 cursor.textContent = "|";
 cursor.style.animation = "blink 1s infinite";
 outputElement.appendChild(cursor);
