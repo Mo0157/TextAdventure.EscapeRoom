@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .invisible-button {
+            background: none;
+            border: none;
+            width: 550px;
+            height: 500px;
+            cursor: pointer;
+            position: relative;
+            /* Optional: Für Debugging den Button kurz sichtbar machen */
+            /* background-color: rgba(0, 0, 0, 0.1); */
+        }
+    </style>
 </head>
 
 <body>
+<div class="center">
+    <button class="invisible-button" onclick="alert('Gebe den Code ein')"></button>
+</div>
+<h1>    </h1>
 <div id="output"></div>
 </body>
 </html>
