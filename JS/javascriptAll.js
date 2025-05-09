@@ -1,8 +1,11 @@
 let text = "Willkommen zum Escape-Room Terminal.\nBitte wähle eine Option:";
+let labeltext = "Choose a username for the OS";
 
 let outputElement = document.getElementById("output");
+let labeloutputElement = document.getElementById("labeloutput");
 
 let i = 0;
+let j = 0;
 
 let speed = 50;
 
@@ -11,9 +14,9 @@ cursor.textContent = "|";
 cursor.style.animation = "blink 1s infinite";
 outputElement.appendChild(cursor);
 
-function typeWriter() {
+function typeWriterOutput() {
     if (i < text.length) {
-        cursor.insertAdjacentText("beforebegin", text.charAt(i));
+        outputElement.insertBefore(document.createTextNode(text.charAt(i)), cursor);
 
         // Spiel einen Tipp-Sound ab (wenn du willst)
         // new Audio("deinSound.mp3").play();
@@ -22,9 +25,20 @@ function typeWriter() {
         i++;
 
         // Warte 'speed' Millisekunden und führ die Funktion nochmal aus
-        setTimeout(typeWriter, speed);
+        setTimeout(typeWriterOutput, speed);
+    } else {
+        setTimeout(typeWriterLabel, 500)
     }
 }
 
+function typeWriterLabel(){
+    labeloutputElement.appendChild(cursor);
+
+    if (j < labeltext.length) {
+        labeloutputElement.insertBefore(document.createTextNode(labeltext.charAt(j)), cursor);
+        j++;
+        setTimeout(typeWriterLabel, speed);
+    }
+}
 // Starte den Tippvorgang
-typeWriter();
+typeWriterOutput();

@@ -37,13 +37,13 @@ button:hover {
 input {
     background-color: #000;
     color: #0f0;
-    border: 1px solid #0f0;
+    border: 1px solid #000;
     padding: 8px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     outline: none;
     caret-color: #0f0;
-    width: 100%;
+    width: 80%;
     box-sizing: border-box;
 }
 
