@@ -1,4 +1,4 @@
-let text = "Willkommen zum Escape-Room Terminal.\nBitte wähle eine Option:";
+let text = "Willkommen zum Escape-Room Terminal.\nBitte schreibe deinen Namen:";
 let labeltext = "Choose a username for the OS";
 
 let outputElement = document.getElementById("output");
@@ -9,7 +9,7 @@ let j = 0;
 
 let speed = 50;
 
-let cursor = document.createElement("span");
+let cursor  = document.createElement("span");
 cursor.textContent = "|";
 cursor.style.animation = "blink 1s infinite";
 outputElement.appendChild(cursor);
