@@ -1,5 +1,5 @@
 let text = "Willkommen zum Escape-Room Terminal.\nBitte schreibe deinen Namen:";
-let labeltext = "Choose a username for the OS";
+let labeltext = "Choose a username for the OS:";
 
 let outputElement = document.getElementById("output");
 let labeloutputElement = document.getElementById("labelOutput");
