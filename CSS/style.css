@@ -96,3 +96,16 @@ body, html {
     background: none;
     cursor: pointer;
 }
+
+#textAnzeige, #textNachZweitemButton {
+    margin-top: 20px;
+}
+
+#textAnzeige {
+    display: none;
+}
+
+#weiterText {
+    display: none;
+    color: blue;
+}
