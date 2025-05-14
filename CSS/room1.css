@@ -1,0 +1,33 @@
+background{
+    background-image: url("H:\Pictures\Screenshots\Screenshot2025-05-09110938.png");
+}
+body { text-align: center; background-color: #000;
+}
+img
+{
+    margin-top: 50px;
+    z-index: -1;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.invisible-button {
+    background: none;
+    border: none;
+    width: 550px;
+    height: 500px;
+    cursor: pointer;
+    position: relative;
+    /* Optional: Für Debugging den Button kurz sichtbar machen */
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
