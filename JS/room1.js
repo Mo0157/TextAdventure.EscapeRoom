@@ -26,5 +26,25 @@ function typeWriter() {
     }
 }
 
+let zweiterButtonWurdeGedrueckt = false;
+
+function behandleErstenButton() {
+    document.getElementById('textAnzeige').style.display = 'block';
+
+    if (zweiterButtonWurdeGedrueckt) {
+        document.getElementById('buttonText').innerText = 'Du gehst weiter.';
+        // Nach kurzer Verzögerung weiterleiten
+        setTimeout(() => {
+            window.location.href = 'room2.html';
+        }, 1500); // 1,5 Sekunden warten, damit man den Text noch sieht
+    } else {
+        document.getElementById('buttonText').innerText = 'Die Tür scheint verschlossen zu sein! Komm später wieder.';
+    }
+}
+
+function zweitenButtonKlicken() {
+    zweiterButtonWurdeGedrueckt = true;
+    document.getElementById('weiterText').style.display = 'block';
+}
 // Starte den Tippvorgang
 typeWriter();
