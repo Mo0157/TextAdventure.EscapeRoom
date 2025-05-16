@@ -18,7 +18,6 @@ button {
     color: #0f0;
     border: 1px solid #0f0;
     padding: 10px 20px;
-    margin: 10px 0;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     cursor: pointer;
@@ -90,8 +89,6 @@ body, html {
 }
 
 .invisible-button {
-    width: 100px;
-    height: 40px;
     border: none;
     background: none;
     cursor: pointer;
