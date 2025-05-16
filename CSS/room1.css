@@ -1,5 +1,5 @@
 body {
-    background-image: url("../Bilder/Tür2.png");
+    background-image: url("../Bilder/Tür.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: fixed;
@@ -29,11 +29,13 @@ body, html {
 
 .invisible-button {
     background: none;
+    position: absolute;
+    top: 50px;
+    left: 60px;
     border: none;
     width: 550px;
     height: 500px;
     cursor: pointer;
-    position: relative;
     z-index: 1;
     /* Optional: Für Debugging den Button kurz sichtbar machen */
     /* background-color: rgba(0, 0, 0, 0.1); */
