@@ -1,8 +1,8 @@
 body {
-    background-image: url("../Bilder/Tür.png");
+    background-image: url("../Bilder/Tür2.png");
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
-    position: fixed;
     background-position: center;
     margin: 0;
     z-index: -5;
@@ -30,13 +30,19 @@ body, html {
 .invisible-button {
     background: none;
     position: absolute;
-    top: 50px;
-    left: 60px;
     border: none;
-    width: 550px;
-    height: 500px;
     cursor: pointer;
     z-index: 1;
     /* Optional: Für Debugging den Button kurz sichtbar machen */
     /* background-color: rgba(0, 0, 0, 0.1); */
+}
+.TürRaum1{
+    width: 300px;
+    height: 550px;
+    margin-right: 60px;
+    background: none;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
 }
