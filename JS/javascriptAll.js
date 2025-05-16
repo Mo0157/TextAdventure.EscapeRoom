@@ -1,3 +1,5 @@
+var falschefarbe
+var richtigefarbe
 let text = "Willkommen zum Escape-Room Terminal.\nBitte schreibe deinen Namen:";
 let labeltext = "Choose a username for the OS:";
 
