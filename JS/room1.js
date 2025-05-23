@@ -29,7 +29,13 @@ function typeWriter() {
 let zweiterButtonWurdeGedrueckt = false;
 
 function behandleErstenButton() {
-    document.getElementById('textAnzeige').style.display = 'block';
+    console.log('Erster Button wurde geklickt');
+    const textDiv = document.getElementById('textAnzeige');
+    textDiv.style.display = 'block';
+
+    setTimeout(() => {
+        textDiv.style.display = 'none';
+    }, 5000);
 
     if (zweiterButtonWurdeGedrueckt) {
         document.getElementById('buttonText').innerText = 'Du gehst weiter.';

@@ -1,0 +1,21 @@
+body {
+    background-image: url("../Bilder/");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    background-position: center;
+    margin: 0;
+    z-index: -5;
+}
+body { text-align: center; background-color: #000;
+}
+img
+{
+    margin-top: 50px;
+    z-index: -1;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
