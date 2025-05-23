@@ -85,10 +85,10 @@ p {
     margin-bottom: 20px;
     line-height: 1.6;
 }
-button {
-    background-color: #111;
-    color: #0f0;
-    border: 1px solid #0f0;
+.button1 {
+    background-color: transparent;
+    color: transparent;
+    border: none;
     padding: 10px 20px;
     margin: 10px 0;
     font-family: 'Courier New', Courier, monospace;
