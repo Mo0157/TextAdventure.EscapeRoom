@@ -31,6 +31,28 @@ img
     /* Optional: Für Debugging den Button kurz sichtbar machen */
     /* background-color: rgba(0, 0, 0, 0.1); */
 }
+
+.TürRaum1{
+    width: 300px;
+    height: 550px;
+    margin-right: 150px;
+    background: none;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+.BuchschrankRaum1{
+    width: 300px;
+    height: 550px;
+    margin-left: 1300px;
+    margin-bottom: 100px;
+    background: none;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
 h1 {
     color: #0ff;
 }
@@ -50,10 +72,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0f0;
-    color: #000;
-}
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
@@ -120,14 +138,4 @@ body, html {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     z-index: 10;
-}
-.TürRaum1{
-    width: 300px;
-    height: 550px;
-    margin-right: 60px;
-    background: none;
-    position: absolute;
-    border: none;
-    cursor: pointer;
-    z-index: 1;
 }
