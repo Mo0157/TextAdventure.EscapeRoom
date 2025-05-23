@@ -28,8 +28,6 @@ img
     border: none;
     cursor: pointer;
     z-index: 1;
-    /* Optional: Für Debugging den Button kurz sichtbar machen */
-    /* background-color: rgba(0, 0, 0, 0.1); */
 }
 
 .TürRaum1{
