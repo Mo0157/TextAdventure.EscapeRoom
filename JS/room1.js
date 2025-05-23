@@ -47,7 +47,6 @@ function behandleErstenButton() {
         document.getElementById('buttonText').innerText = 'Die Tür scheint verschlossen zu sein! Komm später wieder.';
     }
 }
-
 function zweitenButtonKlicken() {
     zweiterButtonWurdeGedrueckt = true;
     document.getElementById('weiterText').style.display = 'block';
