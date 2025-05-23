@@ -14,8 +14,9 @@ p {
     line-height: 1.6;
 }
 button {
-    background: none;
-    border: none;
+    background: #000000;
+    border: 1px solid #0f0;
+    color: #0f0;
     padding: 10px 20px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
