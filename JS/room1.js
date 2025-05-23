@@ -1,4 +1,4 @@
-let text = "1 Raum, bitte wähle eine aktion\nBitte wähle eine Option:";
+let text = "Erkunde den Raum\nund klicke dich herum ";
 
 let outputElement = document.getElementById("output");
 
