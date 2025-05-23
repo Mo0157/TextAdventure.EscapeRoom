@@ -50,10 +50,6 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0f0;
-    color: #000;
-}
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
