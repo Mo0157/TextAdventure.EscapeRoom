@@ -1,6 +1,6 @@
 var falschefarbe
 var richtigefarbe
-let text = "Willkommen zum Escape-Room Terminal.\nBitte schreibe deinen Namen:";
+let text = "Willkommen zum Escape-Room Terminal.\nBitte schreibe deinen Namen:Du bist von Herr AmBROsius gefangen genommen worden und wachst gleich auf. Versuche zu entkommen!";
 let labeltext = "Choose a username for the OS:";
 
 let outputElement = document.getElementById("output");
