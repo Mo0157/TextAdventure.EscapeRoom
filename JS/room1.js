@@ -53,5 +53,3 @@ function zweitenButtonKlicken() {
 }
 // Starte den Tippvorgang
 typeWriter();
-
-.
