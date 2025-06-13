@@ -7,17 +7,6 @@ body {
     margin: 0;
     z-index: 0;
 }
-body {
-    background-image: url("../Bilder/Tür2.png");
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
-    z-index: 0;
-    text-align: center; background-color: #000;
-}
-
 img
 {
     margin-top: 50px;
