@@ -23,9 +23,10 @@ img
 }
 
 .invisible-button {
+    background-color:transparent;
     background: none;
     position: absolute;
-    border: none;
+    border: none ;
     cursor: pointer;
     z-index: 1;
 }
@@ -84,8 +85,8 @@ p {
     line-height: 1.6;
 }
 .button1 {
-    background-color: transparent;
-    color: transparent;
+    background-color: none;
+    color: none;
     border: none;
     padding: 10px 20px;
     margin: 10px 0;
