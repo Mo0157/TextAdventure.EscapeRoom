@@ -27,30 +27,84 @@ function typeWriter() {
     }
 }
 
-let zweiterButtonWurdeGedrueckt = false;
+// Flag, ob Kiste angeklickt wurde
+let kisteAufgemacht = false;
+
+// Buttons per JS positionieren und unsichtbar machen (aber klickbar)
+function positioniereButtons() {
+    const kiste = document.getElementById('kiste');
+    const buchschrank = document.getElementById('buchschrank');
+    const fenster = document.getElementById('fenster');
+    const tuer = document.getElementById('tuer');
+
+    function unsichtbarMachen(button) {
+        button.style.position = 'absolute';
+        button.style.width = '100px';
+        button.style.height = '100px';
+        button.style.backgroundColor = 'transparent'; // unsichtbar
+        button.style.border = 'none';
+        button.style.opacity = '0'; // komplett unsichtbar
+        button.style.cursor = 'pointer';
+    }
+
+    // Positionen setzen und unsichtbar machen
+    kiste.style.top = '100px';
+    kiste.style.left = '50px';
+    unsichtbarMachen(kiste);
+
+    buchschrank.style.top = '100px';
+    buchschrank.style.left = '200px';
+    unsichtbarMachen(buchschrank);
+
+    fenster.style.top = '250px';
+    fenster.style.left = '50px';
+    unsichtbarMachen(fenster);
+
+    tuer.style.top = '250px';
+    tuer.style.left = '200px';
+    unsichtbarMachen(tuer);
+}
+
+// Wird beim Laden der Seite aufgerufen
+window.onload = () => {
+    positioniereButtons();
+};
+
+function kisteKlicken() {
+    kisteAufgemacht = true;
+    zeigeText('Du hast die Kiste geöffnet. Vielleicht kannst du jetzt weiter.');
+    document.getElementById('weiterText').style.display = 'block';
+}
+
+function tuerKlicken() {
+    if (!kisteAufgemacht) {
+        zeigeText('Du kommst nicht weiter, die Tür ist verschlossen!');
+        document.getElementById('weiterText').style.display = 'none';
+    } else {
+        zeigeText('Du gehst weiter.');
+        setTimeout(() => {
+            window.location.href = 'room2.html';
+        }, 1500);
+    }
+}
 
 function behandleErstenButton() {
-    console.log('Erster Button wurde geklickt');
+    zeigeText('Da gibt es nichts interessantes.');
+    document.getElementById('weiterText').style.display = 'none';
+}
+
+function zeigeText(text) {
     const textDiv = document.getElementById('textAnzeige');
+    const p = document.getElementById('buttonText');
+    p.innerText = text;
     textDiv.style.display = 'block';
 
     setTimeout(() => {
-        textDiv.style.display = 'none';
+        if (text !== 'Du gehst weiter.') {
+            textDiv.style.display = 'none';
+        }
     }, 5000);
+}
 
-    if (zweiterButtonWurdeGedrueckt) {
-        document.getElementById('buttonText').innerText = 'Du gehst weiter.';
-        // Nach kurzer Verzögerung weiterleiten
-        setTimeout(() => {
-            window.location.href = 'room2.html';
-        }, 1500); // 1,5 Sekunden warten, damit man den Text noch sieht
-    } else {
-        document.getElementById('buttonText').innerText = 'Die Tür scheint verschlossen zu sein! Komm später wieder.';
-    }
-}
-function zweitenButtonKlicken() {
-    zweiterButtonWurdeGedrueckt = true;
-    document.getElementById('weiterText').style.display = 'block';
-}
 // Starte den Tippvorgang
 typeWriter();
