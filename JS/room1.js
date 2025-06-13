@@ -17,6 +17,7 @@ function typeWriter() {
 
         // Spiel einen Tipp-Sound ab (wenn du willst)
         // new Audio("deinSound.mp3").play();
+        new Audio("../audios/399097__rulfer__click.wav").play();
 
         // Erhöhe i um 1, damit der nächste Buchstabe dran ist
         i++;
@@ -53,5 +54,3 @@ function zweitenButtonKlicken() {
 }
 // Starte den Tippvorgang
 typeWriter();
-
-.
