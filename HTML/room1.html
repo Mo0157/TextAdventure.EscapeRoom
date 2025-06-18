@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Raum 1: Du bist aufgewacht</title>
-    <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="stylesheet" href="../CSS/room1.css" />
+    <meta charset="UTF-8">
+    <title>Raum 1:Du bist aufgewacht</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/room1.css">
 </head>
+
 <body>
-<div class="background"></div>
-<div id="output" class="center"></div>
-
-<button id="kiste" class="KisteRaum1" onclick="kisteKlicken()" title="Kiste"></button>
-<button id="buchschrank" class="BuchschrankRaum1" onclick="behandleErstenButton()" title="Buchschrank"></button>
-<button id="fenster" class="FensterRaum1" onclick="behandleErstenButton()" title="Fenster"></button>
-<button id="tuer" class="TürRaum1" onclick="tuerKlicken()" title="Tür"></button>
-
-<div id="textAnzeige" style="display:none;">
-    <p id="buttonText"></p>
+<div class="center" id="output">
+<button class="TürRaum1" onclick="behandleErstenButton()"></button>
+<button class="BuchschrankRaum1" onclick="behandleErstenButton()"></button>
+<button class="FensterRaum1" onclick="behandleErstenButton()"></button>
+<button class="KisteRaum1" onclick="behandleErstenButton()"></button>
 </div>
-<div id="weiterText" style="display:none;">
-    <p>Kehre nun zur Tür zurück!</p>
+<div id="textAnzeige">
+   <p id="buttonText">Die Tür scheint verschlossen zu sein! Komm später wieder!</p>
 </div>
-
-<script src="../JS/room1.js"></script>
+<button onclick="zweitenButtonKlicken()">Kehre nun zur Tür zurück!</button>
+<div id="weiterText">
+    <p></p>
+</div>
+    <script src="../JS/room1.js"></script>
 </body>
 </html>

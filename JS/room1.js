@@ -17,7 +17,6 @@ function typeWriter() {
 
         // Spiel einen Tipp-Sound ab (wenn du willst)
         // new Audio("deinSound.mp3").play();
-        new Audio("../audios/399097__rulfer__click.wav").play();
 
         // Erhöhe i um 1, damit der nächste Buchstabe dran ist
         i++;
@@ -50,18 +49,22 @@ function positioniereButtons() {
     // Positionen setzen und unsichtbar machen
     kiste.style.top = '100px';
     kiste.style.left = '50px';
+    kiste.style.position = 'absolute';
     unsichtbarMachen(kiste);
 
     buchschrank.style.top = '100px';
     buchschrank.style.left = '200px';
+    buchschrank.style.position = 'absolute';
     unsichtbarMachen(buchschrank);
 
     fenster.style.top = '250px';
     fenster.style.left = '50px';
+    fenster.style.position = 'absolute';
     unsichtbarMachen(fenster);
 
     tuer.style.top = '250px';
     tuer.style.left = '200px';
+    tuer.style.position = 'absolute';
     unsichtbarMachen(tuer);
 }
 
