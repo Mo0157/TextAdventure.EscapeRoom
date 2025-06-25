@@ -74,7 +74,7 @@ window.onload = () => {
 
 function tuerKlicken() {
     if (schlüsselStatus === true) {
-        zeigeText('du hund');
+        zeigeText('Die Tür öffnet sich mit einem knarzen und gibt den nächsten raum wieder');
         document.getElementById('weiterText').style.display = 'none';
         setTimeout(() => {
             window.location.href = 'room2.html';
