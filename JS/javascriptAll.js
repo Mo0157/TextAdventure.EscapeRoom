@@ -18,12 +18,16 @@ outputElement.appendChild(cursor);
 let tippSound = new Audio("../Audios/399097__rulfer__click.wav");
 tippSound.volume = 0.5;
 
+
 function playTippSound() {
     try {
         tippSound.currentTime = 0;
-        tippSound.play();
+        tippSound.play().catch(() => {
+            // Fehler beim Abspielen behandeln oder ignorieren
+            // Beispiel: console.warn("Sound konnte nicht abgespielt werden:", e);
+        });
     } catch (e) {
-        // Fehler ignorieren
+        // Fehler beim Setzen von currentTime o.Ä. ignorieren
     }
 }
 

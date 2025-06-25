@@ -5,26 +5,6 @@ window.onload = function() {
 
 let text = "Erkunde den Raum\nund klicke dich herum ";
 let outputElement = document.getElementById("output");
-let i = 0;
-let speed = 50;
-
-let cursor = document.createElement("span");
-cursor.textContent = "|";
-cursor.className = "blinking-cursor";
-outputElement.appendChild(cursor);
-
-// Tipp-Sound hinzufügen
-let tippSound = new Audio("../Audios/399097__rulfer__click.wav");
-tippSound.volume = 0.5;
-
-function playTippSound() {
-    try {
-        tippSound.currentTime = 0;
-        tippSound.play();
-    } catch (e) {
-        // Fehler ignorieren
-    }
-}
 
 function typeWriter() {
     if (i < text.length) {
