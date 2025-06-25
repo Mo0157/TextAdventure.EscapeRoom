@@ -1,104 +1,101 @@
 body {
-    background-color: #000;
-    color: #0f0;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 20px;
-}
+        background-color: #000;
+        color: #0f0;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 20px;
+    }
 
-h1 {
-    color: #0ff;
-}
+    h1 {
+        color: #0ff;
+    }
 
-p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-button {
-    background: #000000;
-    border: 1px solid #0f0;
-    color: #0f0;
-    padding: 10px 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    cursor: pointer;
-}
+    p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
 
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
+    button {
+        background: #000;
+        border: 1px solid #0f0;
+        color: #0f0;
+        padding: 10px 20px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+        cursor: pointer;
+    }
 
-input {
-    background: none;
-    color: #0f0;
-    border: none;
-    padding: 8px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    outline: none;
-    caret-color: #0f0;
-    width: 70%;
-    box-sizing: border-box;
-}
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }
 
-input:focus {
-    border-color: #0ff;
-    box-shadow: 0 0 5px #0ff;
-}
+    input {
+        background: none;
+        color: #0f0;
+        border: none;
+        padding: 8px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+        outline: none;
+        caret-color: #0f0;
+        width: 70%;
+        box-sizing: border-box;
+    }
 
-::placeholder {
-    color: #0f0;
-    opacity: 0.5;
-}
+    input:focus {
+        border-color: #0ff;
+        box-shadow: 0 0 5px #0ff;
+    }
 
-.blinking-cursor {
-    display: inline-block;
-    width: 10px;
-    background-color: #0f0;
-    margin-left: 5px;
-    animation: blink 1s infinite;
-}
+    ::placeholder {
+        color: #0f0;
+        opacity: 0.5;
+    }
 
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-}
+    .blinking-cursor {
+        display: inline-block;
+        width: 10px;
+        background-color: #0f0;
+        margin-left: 5px;
+        animation: blink 1s infinite;
+    }
 
-body, html {
-    height: 100%;
-    margin: 0;
-}
+    body, html {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
 
-.center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+    }
 
-#code-input {
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 16px;
-}
+    #code-input {
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 16px;
+    }
 
-.invisible-button {
-    border: none;
-    background: none;
-    cursor: pointer;
-}
+    .invisible-button {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
 
-#textAnzeige, #textNachZweitemButton {
-    margin-top: 20px;
-}
+    #textAnzeige, #textNachZweitemButton {
+        margin-top: 20px;
+    }
 
-#textAnzeige {
-    display: none;
-}
+    #textAnzeige {
+        display: none;
+    }
 
-#weiterText {
-    display: none;
-    color: blue;
-}
+    #weiterText {
+        display: none;
+        color: blue;
+    }

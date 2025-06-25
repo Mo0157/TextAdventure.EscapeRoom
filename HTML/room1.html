@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Raum 1:Du bist aufgewacht</title>
+    <title>Raum 1: Du bist aufgewacht</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/room1.css">
 </head>
-
 <body>
-<div class="center" id="output">
-<button class="TürRaum1" onclick="tuerKlicken()"></button>
-<button class="BuchschrankRaum1" onclick="behandleErstenButton()"></button>
-<button class="FensterRaum1" onclick="behandleErstenButton()"></button>
-<button class="KisteRaum1" onclick="behandleErstenButton(),schlüsselGefunden()"></button>
-</div>
+<div id="output" class="center"></div>
+<button id="tuer" class="TürRaum1" onclick="tuerKlicken()"></button>
+<button id="buchschrank" class="BuchschrankRaum1" onclick="behandleErstenButton()"></button>
+<button id="fenster" class="FensterRaum1" onclick="behandleErstenButton()"></button>
+<button id="kiste" class="KisteRaum1" onclick="behandleErstenButton(); schlüsselGefunden();"></button>
 <div id="textAnzeige">
-   <p id="buttonText">Die Tür scheint verschlossen zu sein! Komm später wieder!</p>
+    <p id="buttonText">Die Tür scheint verschlossen zu sein! Komm später wieder!</p>
 </div>
-<button onclick="zweitenButtonKlicken()">Kehre nun zur Tür zurück!</button>
 <div id="weiterText">
     <p></p>
 </div>
-    <script src="../JS/room1.js"></script>
+<script src="../JS/room1.js"></script>
 </body>
 </html>

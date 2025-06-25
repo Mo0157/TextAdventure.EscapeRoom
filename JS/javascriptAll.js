@@ -1,6 +1,6 @@
 let falschefarbe;
 let richtigefarbe;
-let text = "Willkommen zum Escape-Room Terminal.\nBitte schreibe deinen Namen:Du bist von Herr AmBROsius gefangen genommen worden und wachst gleich auf. Versuche zu entkommen!";
+let text = "Willkommen zum Escape-Room Terminal.\nBitte schreibe deinen Namen: Du bist von Herr AmBROsius gefangen genommen worden und wachst gleich auf. Versuche zu entkommen!";
 let labeltext = "Choose a username for the OS:";
 
 let outputElement = document.getElementById("output");
@@ -10,15 +10,13 @@ let i = 0;
 let j = 0;
 let speed = 50;
 
-// Cursor-Element
 let cursor = document.createElement("span");
 cursor.textContent = "|";
 cursor.className = "blinking-cursor";
 outputElement.appendChild(cursor);
 
-// Tipp-Sound vorbereiten
 let tippSound = new Audio("../Audios/399097__rulfer__click.wav");
-tippSound.volume = 0.5; // Optional: Lautstärke anpassen
+tippSound.volume = 0.5;
 
 function playTippSound() {
     try {
@@ -50,5 +48,4 @@ function typeWriterLabel() {
     }
 }
 
-// Starte die Typewriter-Animation
 typeWriterOutput();

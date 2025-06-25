@@ -1,34 +1,25 @@
-body {
-    background-image: url("../Bilder/Raum2.png");
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+body, html {
+    height: 100%;
     margin: 0;
-    z-index: 0;
-}
-body {
-    background-image: url("../Bilder/Raum2.png");
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
-    z-index: 0;
-    text-align: center; background-color: #000;
 }
 
-img
-{
-    margin-top: 50px;
-    z-index: -1;
+body {
+    background-image: url("../Bilder/Raum2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    background-color: #000;
 }
 
 .center {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
 }
 
 .invisible-button {
@@ -49,9 +40,8 @@ p {
 }
 
 @keyframes blink {
-    0% { opacity: 1; }
+    0%, 100% { opacity: 1; }
     50% { opacity: 0; }
-    100% { opacity: 1; }
 }
 
 input {
@@ -85,24 +75,12 @@ input:focus {
     animation: blink 1s infinite;
 }
 
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
 #code-input {
     margin-bottom: 10px;
     padding: 10px;
     font-size: 16px;
 }
+
 #textAnzeige {
     display: none;
     position: fixed;
