@@ -99,7 +99,7 @@ function zeigeText(text) {
         if (text !== 'Du gehst weiter.') {
             textDiv.style.display = 'none';
         }
-    }, 5000);
+    }, 1500);
 }
 
 // Starte den Tippvorgang
@@ -107,6 +107,6 @@ typeWriter();
 
 function schlüsselGefunden() {
     schlüsselStatus = true
-    zeigeText('Du hast die Kiste geöffnet. Vielleicht kannst du jetzt weiter n-wort.');
+    zeigeText('Du hast die Kiste geöffnet. Vielleicht kannst du jetzt weiter.');
     document.getElementById('weiterText').style.display = 'block';
 }
