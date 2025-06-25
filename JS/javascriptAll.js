@@ -1,5 +1,5 @@
-var falschefarbe
-var richtigefarbe
+let falschefarbe;
+let richtigefarbe;
 let text = "Willkommen zum Escape-Room Terminal.\nBitte schreibe deinen Namen:Du bist von Herr AmBROsius gefangen genommen worden und wachst gleich auf. Versuche zu entkommen!";
 let labeltext = "Choose a username for the OS:";
 
@@ -8,39 +8,47 @@ let labeloutputElement = document.getElementById("labelOutput");
 
 let i = 0;
 let j = 0;
-
 let speed = 50;
 
-let cursor  = document.createElement("span");
+// Cursor-Element
+let cursor = document.createElement("span");
 cursor.textContent = "|";
-cursor.style.animation = "blink 1s infinite";
+cursor.className = "blinking-cursor";
 outputElement.appendChild(cursor);
+
+// Tipp-Sound vorbereiten
+let tippSound = new Audio("../Audios/399097__rulfer__click.wav");
+tippSound.volume = 0.5; // Optional: Lautstärke anpassen
+
+function playTippSound() {
+    try {
+        tippSound.currentTime = 0;
+        tippSound.play();
+    } catch (e) {
+        // Fehler ignorieren
+    }
+}
 
 function typeWriterOutput() {
     if (i < text.length) {
         outputElement.insertBefore(document.createTextNode(text.charAt(i)), cursor);
-
-        // Spiel einen Tipp-Sound ab (wenn du willst)
-        // new Audio("deinSound.mp3").play();
-
-        // Erhöhe i um 1, damit der nächste Buchstabe dran ist
+        playTippSound();
         i++;
-
-        // Warte 'speed' Millisekunden und führ die Funktion nochmal aus
         setTimeout(typeWriterOutput, speed);
     } else {
-        setTimeout(typeWriterLabel, 500)
+        setTimeout(typeWriterLabel, 500);
     }
 }
 
-function typeWriterLabel(){
+function typeWriterLabel() {
     labeloutputElement.appendChild(cursor);
-
     if (j < labeltext.length) {
         labeloutputElement.insertBefore(document.createTextNode(labeltext.charAt(j)), cursor);
+        playTippSound();
         j++;
         setTimeout(typeWriterLabel, speed);
     }
 }
-// Starte den Tippvorgang
+
+// Starte die Typewriter-Animation
 typeWriterOutput();
