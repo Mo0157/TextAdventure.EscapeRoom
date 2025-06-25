@@ -53,10 +53,10 @@ img
     z-index: 1;
 }
 .FensterRaum1{
-    width: 100px;
-    height: 300px;
-    margin-right: 100px;
-    margin-bottom: 500px;
+    width: 200px;
+    height: 500px;
+    margin-right: 1900px;
+    margin-bottom: 600px;
     background: none;
     position: absolute;
     border: none;
