@@ -55,7 +55,7 @@ img
 .FensterRaum1{
     width: 100px;
     height: 300px;
-    margin-right: 1600px;
+    margin-right: 100px;
     margin-bottom: 500px;
     background: none;
     position: absolute;
@@ -65,10 +65,10 @@ img
 }
 
 .KisteRaum1{
-    width: 250px;
-    height: 250px;
-    margin-right: 1300px;
-    margin-top: 650px;
+    width: 350px;
+    height: 350px;
+    margin-right: 1600px;
+    margin-top: 800px;
     background: none;
     position: absolute;
     border: none;
