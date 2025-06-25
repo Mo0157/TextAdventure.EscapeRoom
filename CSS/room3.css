@@ -19,3 +19,10 @@ body, html {
     height: 100%;
     margin: 0;
 }
+
+.mappeRaum3 {
+    margin-top: 1000px;
+    margin-left: 400px;
+    width: 500px;
+    height: 300px;
+}
