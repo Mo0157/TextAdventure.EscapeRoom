@@ -21,34 +21,6 @@ function typeWriter() {
     }
 }
 
-function positioniereButtons() {
-    const kiste = document.getElementById('kiste');
-    const buchschrank = document.getElementById('buchschrank');
-    const fenster = document.getElementById('fenster');
-    const tuer = document.getElementById('tuer');
-
-    // Positionen setzen und unsichtbar machen
-    kiste.style.top = '100px';
-    kiste.style.left = '50px';
-    kiste.style.position = 'absolute';
-    unsichtbarMachen(kiste);
-
-    buchschrank.style.top = '100px';
-    buchschrank.style.left = '200px';
-    buchschrank.style.position = 'absolute';
-    unsichtbarMachen(buchschrank);
-
-    fenster.style.top = '250px';
-    fenster.style.left = '50px';
-    fenster.style.position = 'absolute';
-    unsichtbarMachen(fenster);
-
-    tuer.style.top = '250px';
-    tuer.style.left = '200px';
-    tuer.style.position = 'absolute';
-    unsichtbarMachen(tuer);
-}
-
 window.onload = () => {
     positioniereButtons();
     typeWriter();
