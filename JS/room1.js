@@ -11,6 +11,8 @@ cursor.textContent = "|";
 cursor.style.animation = "blink 1s infinite";
 outputElement.appendChild(cursor);
 
+var schlüsselStatus = false
+
 function typeWriter() {
     if (i < text.length) {
         cursor.insertAdjacentText("beforebegin", text.charAt(i));
@@ -73,21 +75,15 @@ window.onload = () => {
     positioniereButtons();
 };
 
-function kisteKlicken() {
-    kisteAufgemacht = true;
-    zeigeText('Du hast die Kiste geöffnet. Vielleicht kannst du jetzt weiter.');
-    document.getElementById('weiterText').style.display = 'block';
-}
-
 function tuerKlicken() {
-    if (!kisteAufgemacht) {
-        zeigeText('Du kommst nicht weiter, die Tür ist verschlossen!');
+    if (schlüsselStatus === true) {
+        zeigeText('du hund');
         document.getElementById('weiterText').style.display = 'none';
-    } else {
-        zeigeText('Du gehst weiter.');
         setTimeout(() => {
             window.location.href = 'room2.html';
         }, 1500);
+    } else {
+        zeigeText('Die Tür ist verschlossen, finde einen schlüssel.');
     }
 }
 
@@ -111,3 +107,9 @@ function zeigeText(text) {
 
 // Starte den Tippvorgang
 typeWriter();
+
+function schlüsselGefunden() {
+    schlüsselStatus = true
+    zeigeText('Du hast die Kiste geöffnet. Vielleicht kannst du jetzt weiter n-wort.');
+    document.getElementById('weiterText').style.display = 'block';
+}
