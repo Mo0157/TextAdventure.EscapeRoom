@@ -5,7 +5,7 @@ let speed = 50;
 
 let cursor = document.createElement("span");
 cursor.textContent = "|";
-cursor.className = "blinking-cursor";
+cursor.style.animation = "blink 1s infinite";
 outputElement.appendChild(cursor);
 
 let schlüsselStatus = false;
@@ -46,20 +46,25 @@ function positioniereButtons() {
         button.style.cursor = 'pointer';
     }
 
+    // Positionen setzen und unsichtbar machen
     kiste.style.top = '100px';
     kiste.style.left = '50px';
+    kiste.style.position = 'absolute';
     unsichtbarMachen(kiste);
 
     buchschrank.style.top = '100px';
     buchschrank.style.left = '200px';
+    buchschrank.style.position = 'absolute';
     unsichtbarMachen(buchschrank);
 
     fenster.style.top = '250px';
     fenster.style.left = '50px';
+    fenster.style.position = 'absolute';
     unsichtbarMachen(fenster);
 
     tuer.style.top = '250px';
     tuer.style.left = '200px';
+    tuer.style.position = 'absolute';
     unsichtbarMachen(tuer);
 }
 
@@ -69,8 +74,8 @@ window.onload = () => {
 };
 
 function tuerKlicken() {
-    if (schlüsselStatus) {
-        zeigeText('Du gehst weiter.');
+    if (schlüsselStatus === true) {
+        zeigeText('Die Tür öffnet sich mit einem knarzen und gibt den nächsten raum wieder');
         document.getElementById('weiterText').style.display = 'none';
         setTimeout(() => {
             window.location.href = 'room2.html';
@@ -95,11 +100,11 @@ function zeigeText(text) {
         if (text !== 'Du gehst weiter.') {
             textDiv.style.display = 'none';
         }
-    }, 1000);
+    }, 1500);
 }
 
 function schlüsselGefunden() {
-    schlüsselStatus = true;
-    zeigeText('Du hast die Kiste geöffnet. Vielleicht kannst du jetzt weitergehen.');
+    schlüsselStatus = true
+    zeigeText('Du hast die Kiste geöffnet. Vielleicht kannst du jetzt weiter.');
     document.getElementById('weiterText').style.display = 'block';
 }

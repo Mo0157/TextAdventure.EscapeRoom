@@ -32,55 +32,135 @@ body, html {
         background: none;
     }
 
-    .TürRaum1 {
-        width: 450px;
-        height: 800px;
-        margin-right: 200px;
-    }
+.TürRaum1{
+    width: 450px;
+    height: 800px;
+    margin-right: 200px;
+    background: none;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+.BuchschrankRaum1 {
+    width: 400px;
+    height: 750px;
+    margin-left: 1500px;
+    margin-bottom: 100px;
+    background: none;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+.FensterRaum1{
+    width: 200px;
+    height: 500px;
+    margin-right: 1900px;
+    margin-bottom: 600px;
+    background: none;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
 
-    .BuchschrankRaum1 {
-        width: 300px;
-        height: 550px;
-        margin-left: 1300px;
-        margin-bottom: 100px;
-    }
+.KisteRaum1{
+    width: 350px;
+    height: 350px;
+    margin-right: 1600px;
+    margin-top: 800px;
+    background: none;
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
 
-    .FensterRaum1 {
-        width: 100px;
-        height: 300px;
-        margin-right: 1600px;
-        margin-bottom: 500px;
-    }
+h1 {
+    color: #0ff;
+}
 
-    .KisteRaum1 {
-        width: 250px;
-        height: 250px;
-        margin-right: 1300px;
-        margin-top: 650px;
-    }
+p {
+    margin-bottom: 500px;
+    line-height: 1.6;
+}
+.button1 {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    cursor: pointer;
+}
 
-    #textAnzeige {
-        display: none;
-        position: fixed;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #0f0;
-        font-size: 20px;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 10px;
-        z-index: 10;
-    }
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
-    .blinking-cursor {
-        display: inline-block;
-        width: 10px;
-        background-color: #0f0;
-        margin-left: 5px;
-        animation: blink 1s infinite;
-    }
+input {
+    background-color: #000;
+    color: #0f0;
+    border: 1px solid #000;
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    outline: none;
+    caret-color: #0f0;
+    width: 80%;
+    box-sizing: border-box;
+}
 
-    @keyframes blink {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0; }
-    }
+input:focus {
+    border-color: #0ff;
+    box-shadow: 0 0 5px #0ff;
+}
+
+::placeholder {
+    color: #0f0;
+    opacity: 0.5;
+}
+
+.blinking-cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: #0f0;
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#code-input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+#textAnzeige {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0f0;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    z-index: 10;
+    border-radius: 8px;
+}
