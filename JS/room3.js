@@ -13,3 +13,6 @@ window.onload = () => {
     positioniereButtons();
 };
 
+function behandleMappenButton(){
+
+}
