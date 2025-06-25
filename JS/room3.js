@@ -2,7 +2,7 @@ alert ("Du hast es in den dritten Raum geschafft! Du bist in einem Labor und sie
 function positioniereButtons() {
     const mappe = document.getElementById('mappe');
 
-    function unsichtbarMachen(button) {
+    function unsichtbarmachen(button) {
         button.style.position = 'absolute';
         button.style.width = '100px';
         button.style.height = '100px';
@@ -16,5 +16,9 @@ function positioniereButtons() {
     mappe.style.top = '100px';
     mappe.style.left = '50px';
     mappe.style.position = 'absolute';
-    unsichtbarMachen(mappe);
+    unsichtbarmachen(mappe);
+}
+
+function behandleMappenButton(){
+
 }
