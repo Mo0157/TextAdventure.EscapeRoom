@@ -19,10 +19,6 @@ function positioniereButtons() {
     unsichtbarMachen(mappe);
 }
 
-function behandleMappenButton(){
-
-}
-
 window.onload = () => {
     positioniereButtons();
 };
