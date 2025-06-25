@@ -13,15 +13,6 @@ let schlüsselStatus = false;
 let tippSound = new Audio("../Audios/399097__rulfer__click.wav");
 tippSound.volume = 0.5;
 
-function playTippSound() {
-    try {
-        tippSound.currentTime = 0;
-        tippSound.play();
-    } catch (e) {
-        // Fehler ignorieren
-    }
-}
-
 function typeWriter() {
     if (i < text.length) {
         cursor.insertAdjacentText("beforebegin", text.charAt(i));

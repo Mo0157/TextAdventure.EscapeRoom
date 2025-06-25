@@ -12,3 +12,4 @@ function positioniereButtons() {
 window.onload = () => {
     positioniereButtons();
 };
+
