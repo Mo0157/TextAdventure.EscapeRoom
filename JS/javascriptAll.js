@@ -48,4 +48,14 @@ function typeWriterLabel() {
     }
 }
 
+function unsichtbarMachen(button) {
+    button.style.position = 'absolute';
+    button.style.width = '100px';
+    button.style.height = '100px';
+    button.style.backgroundColor = 'transparent';
+    button.style.border = 'none';
+    button.style.opacity = '0';
+    button.style.cursor = 'pointer';
+}
+
 typeWriterOutput();

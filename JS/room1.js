@@ -36,16 +36,6 @@ function positioniereButtons() {
     const fenster = document.getElementById('fenster');
     const tuer = document.getElementById('tuer');
 
-    function unsichtbarMachen(button) {
-        button.style.position = 'absolute';
-        button.style.width = '100px';
-        button.style.height = '100px';
-        button.style.backgroundColor = 'transparent';
-        button.style.border = 'none';
-        button.style.opacity = '0';
-        button.style.cursor = 'pointer';
-    }
-
     // Positionen setzen und unsichtbar machen
     kiste.style.top = '100px';
     kiste.style.left = '50px';
