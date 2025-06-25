@@ -28,9 +28,6 @@ function typeWriter() {
     }
 }
 
-// Flag, ob Kiste angeklickt wurde
-let kisteAufgemacht = false;
-
 // Buttons per JS positionieren und unsichtbar machen (aber klickbar)
 function positioniereButtons() {
     const kiste = document.getElementById('kiste');
