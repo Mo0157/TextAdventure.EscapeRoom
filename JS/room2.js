@@ -15,25 +15,13 @@ function typeWriter() {
     }
 }
 
-function behandleErstenButton() {
-    const textDiv = document.getElementById('textAnzeige');
-    textDiv.style.display = 'block';
-
-    setTimeout(() => {
-        textDiv.style.display = 'none';
-        }, 5000);
-
-    if (zweiterButtonWurdeGedrueckt) {
-        document.getElementById('buttonText').innerText = 'Du gehst weiter.';
-        setTimeout(() => {
-            window.location.href = 'room2.html';
-            }, 1500);
-    } else {
-        document.getElementById('buttonText').innerText = 'Die Tür scheint verschlossen zu sein! Komm später wieder.';
-    }
+function falscheTuer() {
+    zeigeText('Dies ist nicht Herr AmBROsius Lieblingsfarbe! Versuche es erneut!')
 }
 
-function zweitenButtonKlicken() {
-    zweiterButtonWurdeGedrueckt = true;
-    document.getElementById('weiterText').style.display = 'block';
+function richtigeTuer() {
+    zeigeText('Dies ist Herr AmBROsius Lieblingsfarbe! Trete durch die Tür um voranzuschreiten!')
+    setTimeout(() => {
+        window.location.href = 'room3.html';
+    }, 1500)
 }
