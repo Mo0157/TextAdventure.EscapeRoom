@@ -16,12 +16,13 @@ function typeWriter() {
 }
 
 function falscheTuer() {
-    zeigeText('Dies ist nicht Herr AmBROsius Lieblingsfarbe! Versuche es erneut!')
+    alert('Dies ist nicht Herr AmBROsius Lieblingsfarbe! Versuche es erneut!');
 }
 
 function richtigeTuer() {
-    zeigeText('Dies ist Herr AmBROsius Lieblingsfarbe! Trete durch die Tür um voranzuschreiten!')
+    alert('Dies ist Herr AmBROsius Lieblingsfarbe! Trete durch die Tür!');
     setTimeout(() => {
         window.location.href = 'room3.html';
-    }, 1500)
+    }, 1500);
 }
+
