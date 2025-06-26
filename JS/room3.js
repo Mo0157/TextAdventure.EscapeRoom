@@ -19,6 +19,10 @@ function positioniereButtons() {
     unsichtbarmachen(mappe);
 }
 
-function behandleMappenButton(){
+function gotoseite3.2(){
+    alert("Du hast es in den dritten Raum geschafft! Du bist in einem Labor und siehst vor dir einen Computer. Probier rum!");
 
+    document.getElementById("mappe").addEventListener("click", function() {
+        window.location.href = "../HTMLroom3.2.html";
+    });
 }
