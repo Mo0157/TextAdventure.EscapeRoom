@@ -87,7 +87,6 @@ h1 {
 }
 
 p {
-    margin-bottom: 500px;
     line-height: 1.6;
 }
 .button1 {
@@ -168,4 +167,8 @@ body, html {
     padding: 10px;
     z-index: 10;
     border-radius: 8px;
+}
+
+#output, #labelOutput {
+    text-align: center;
 }

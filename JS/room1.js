@@ -31,15 +31,6 @@ function typeWriter() {
     }
 }
 
-function unsichtbarMachen(button) {
-    button.style.width = '100px';
-    button.style.height = '100px';
-    button.style.backgroundColor = 'transparent';
-    button.style.border = 'none';
-    button.style.opacity = '0';
-    button.style.cursor = 'pointer';
-}
-
 window.onload = () => {
     typeWriter();
 };
