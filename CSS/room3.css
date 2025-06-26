@@ -27,8 +27,52 @@ body, html {
     height: 300px;
 
 }
-MappeButton {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+.MappeButton {
+    position: fixed;
+    top: 850px;
+    left: 425px;
+    height: 300px;
+    width: 300px;
+    color: transparent;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.computerButton {
+    position: fixed;
+    top: 100px;
+    left: 300px;
+    width: 1300px;
+    height: 600px;
+    color: transparent;
+    border: none;
+    background: none;
+    cursor: pointer;
+    z-index: 20;
+}
+#textAnzeige {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0f0;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    z-index: 10;
+}
+
+#output {
+    top: 100px;
+    width: 1750px;
+    min-height: 60px;
+    color: #0f0;
+    font-size: 1rem;
+    padding: 20px 30px;
+    border-radius: 12px;
+    text-align: center;
+    z-index: 2;
 }

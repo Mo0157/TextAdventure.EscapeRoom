@@ -109,3 +109,11 @@ body, html {
 #output, #labelOutput {
     text-align: center;
 }
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 600px;
+}

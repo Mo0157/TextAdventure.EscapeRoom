@@ -62,7 +62,7 @@ function zeigeText(text) {
         if (text !== 'Du gehst weiter.') {
             textDiv.style.display = 'none';
         }
-    }, 1000);
+    }, 2000);
 }
 
 function schlüsselGefunden() {

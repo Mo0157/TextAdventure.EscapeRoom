@@ -96,6 +96,16 @@ body, html {
 
 #textAnzeige {
     display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0f0;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    z-index: 10;
+    border-radius: 8px;
 }
 
 #weiterText {
@@ -124,4 +134,28 @@ img
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.blueButton {
+    position: fixed;
+    top: 380px;
+    left: 100px;
+    width: 250px;
+    height: 250px;
+    color: transparent;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.redButton {
+    position: fixed;
+    top: 20px;
+    left: 270px;
+    width: 250px;
+    height: 250px;
+    color: transparent;
+    border: none;
+    background: none;
+    cursor: pointer;
 }

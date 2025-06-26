@@ -8,9 +8,17 @@
     <link rel="stylesheet" href="../CSS/room2.css">
 </head>
 <body>
-    <button id="blau" class="tuerblauRaum2" onclick="falscheTuer()">blaue Tür</button>
-    <button id="rot" class="tuerrotRaum2" onclick="falscheTuer()">rote Tür</button>
+    <div id="output"></div>
+    <button id="blau" class="tuerBlauRaum2" onclick="falscheTuer()"></button>
+    <button id="rot" class="tuerRotRaum2" onclick="falscheTuer()">rote Tür</button>
     <button id="gruen" class="tuerGruenRaum2" onclick="richtigeTuer()">grüne Tür</button>
+    <button id="verschlossen" class="tuerVerschlossenRaum2" onclick="verschlosseneTuer()">verschlossene Tür</button>
+    <div id="textAnzeige">
+        <p id="buttonText">Die Tür scheint verschlossen zu sein! Komm später wieder!</p>
+    </div>
+    <div id="weiterText">
+        <p></p>
+    </div>
     <script src="../JS/room2.js"></script>
 </body>
 </html>

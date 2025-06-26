@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="../CSS/room3.css">
 </head>
 <body>
+    <div id="output"></div>
+    <div id="labelOutput"></div>
    <button onclick="gotoseite32()" class="MappeButton">Mappe</button>
-   <button onclick="alert(`Hier gibt es nichts zu sehen, außer das, wo du schon warst. Schau dich weiter um!`)">Computer</button>
+   <button onclick="schonGeguckt()" class="computerButton">Computer</button>
+    <div id="textAnzeige" style="display:none;">
+        <p id="buttonText"></p>
+    </div>
+    <div id="weiterText" style="display:none;"><p></p></div>
     <script src="../JS/room3.js"></script>
 </body>
 </html>

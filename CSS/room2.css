@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
     margin: 0;
+    overflow: hidden;
 }
 
 body {
@@ -92,4 +93,56 @@ input:focus {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     z-index: 10;
+}
+
+.tuerBlauRaum2 {
+    position: absolute;
+    top: 300px;
+    left: 1050px;
+    height: 450px;
+    width: 210px;
+    color: transparent;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.tuerRotRaum2 {
+    position: absolute;
+    top: 150px;
+    left: 625px;
+    width: 150px;
+    height: 800px;
+    color: transparent;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.tuerGruenRaum2 {
+    position: absolute;
+    top: 200px;
+    left: 1550px;
+    width: 150px;
+    height: 800px;
+    color: transparent;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.tuerVerschlossenRaum2 {
+    position: absolute;
+    top: 400px;
+    left: 1425px;
+    width: 40px;
+    height: 450px;
+    color: transparent;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#output, #labelOutput {
+    text-align: center;
 }
