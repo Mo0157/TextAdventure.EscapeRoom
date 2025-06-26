@@ -25,51 +25,22 @@ function playTippSound() {
 function typeWriter() {
     if (i < text.length) {
         cursor.insertAdjacentText("beforebegin", text.charAt(i));
+        playTippSound();
         i++;
         setTimeout(typeWriter, speed);
     }
 }
 
-function positioniereButtons() {
-    const kiste = document.getElementById('kiste');
-    const buchschrank = document.getElementById('buchschrank');
-    const fenster = document.getElementById('fenster');
-    const tuer = document.getElementById('tuer');
-
-    function unsichtbarMachen(button) {
-        button.style.position = 'absolute';
-        button.style.width = '100px';
-        button.style.height = '100px';
-        button.style.backgroundColor = 'transparent';
-        button.style.border = 'none';
-        button.style.opacity = '0';
-        button.style.cursor = 'pointer';
-    }
-
-    // Positionen setzen und unsichtbar machen
-    kiste.style.top = '100px';
-    kiste.style.left = '50px';
-    kiste.style.position = 'absolute';
-    unsichtbarMachen(kiste);
-
-    buchschrank.style.top = '100px';
-    buchschrank.style.left = '200px';
-    buchschrank.style.position = 'absolute';
-    unsichtbarMachen(buchschrank);
-
-    fenster.style.top = '250px';
-    fenster.style.left = '50px';
-    fenster.style.position = 'absolute';
-    unsichtbarMachen(fenster);
-
-    tuer.style.top = '250px';
-    tuer.style.left = '200px';
-    tuer.style.position = 'absolute';
-    unsichtbarMachen(tuer);
+function unsichtbarMachen(button) {
+    button.style.width = '100px';
+    button.style.height = '100px';
+    button.style.backgroundColor = 'transparent';
+    button.style.border = 'none';
+    button.style.opacity = '0';
+    button.style.cursor = 'pointer';
 }
 
 window.onload = () => {
-    positioniereButtons();
     typeWriter();
 };
 
@@ -100,11 +71,11 @@ function zeigeText(text) {
         if (text !== 'Du gehst weiter.') {
             textDiv.style.display = 'none';
         }
-    }, 1500);
+    }, 1000);
 }
 
 function schlüsselGefunden() {
-    schlüsselStatus = true
-    zeigeText('Du hast die Kiste geöffnet. Vielleicht kannst du jetzt weiter.');
+    schlüsselStatus = true;
+    zeigeText('Du hast die Kiste geöffnet. Vielleicht kannst du jetzt weitergehen.');
     document.getElementById('weiterText').style.display = 'block';
 }
