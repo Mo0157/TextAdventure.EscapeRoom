@@ -21,11 +21,8 @@ function playTippSound() {
     try {
         tippSound.currentTime = 0;
         tippSound.play().catch(() => {
-            // Fehler beim Abspielen behandeln oder ignorieren
-            // Beispiel: console.warn("Sound konnte nicht abgespielt werden:", e);
         });
     } catch (e) {
-        // Fehler beim Setzen von currentTime o.Ä. ignorieren
     }
 }
 
