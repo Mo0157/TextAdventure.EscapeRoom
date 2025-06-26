@@ -7,3 +7,7 @@ window.onload = () => {
 function behandleMappenButton(){
 
 }
+function behandleMappenButton(){
+if behandleMappenButton("true")
+
+}
