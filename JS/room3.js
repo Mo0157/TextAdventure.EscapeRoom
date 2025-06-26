@@ -8,6 +8,6 @@ function behandleMappenButton(){
 
 }
 function behandleMappenButton(){
-if behandleMappenButton("true")
+    window.location.href ="room3.2.html"
 
 }
