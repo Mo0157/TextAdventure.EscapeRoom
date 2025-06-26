@@ -4,7 +4,5 @@ function positioniereButtons() {
 }
 
 function gotoseite32(){
-    alert("Du hast es in den dritten Raum geschafft! Du bist in einem Labor und siehst vor dir einen Computer. Probier rum!");
-
         window.location.href = "../HTML/room3.2.html";
 }
