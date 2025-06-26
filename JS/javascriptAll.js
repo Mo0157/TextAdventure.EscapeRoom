@@ -56,7 +56,9 @@ function positioniereButtons() {
     const fenster = document.getElementById('fenster');
     const tuer = document.getElementById('tuer');
     const mappe = document.getElementById('mappe');
-
+    const blau = document.getElementById('blau')
+    const rot = document.getElementById('rot')
+    const gruen = document.getElementById('gruen')
 
     function unsichtbarMachen(button) {
         button.style.position = 'absolute';
@@ -93,6 +95,21 @@ function positioniereButtons() {
     mappe.style.left = '50px';
     mappe.style.position = 'absolute';
     unsichtbarMachen(mappe);
+
+    blau.style.top = '100px';
+    blau.style.left = '50px';
+    blau.style.position = 'absolute';
+    unsichtbarMachen(blau);
+
+    rot.style.top = '100px';
+    rot.style.left = '50px';
+    rot.style.position = 'absolute';
+    unsichtbarMachen(rot);
+
+    gruen.style.top = '100px';
+    gruen.style.left = '50px';
+    gruen.style.position = 'absolute';
+    unsichtbarMachen(gruen);
 }
 
 typeWriterOutput();
