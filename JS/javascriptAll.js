@@ -17,7 +17,6 @@ outputElement.appendChild(cursor);
 let tippSound = new Audio("../Audios/399097__rulfer__click.wav");
 tippSound.volume = 0.5;
 
-
 function playTippSound() {
     try {
         tippSound.currentTime = 0;
@@ -57,6 +56,7 @@ function positioniereButtons() {
     const fenster = document.getElementById('fenster');
     const tuer = document.getElementById('tuer');
     const mappe = document.getElementById('mappe');
+
 
     function unsichtbarMachen(button) {
         button.style.position = 'absolute';

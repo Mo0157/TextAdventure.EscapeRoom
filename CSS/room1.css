@@ -33,9 +33,11 @@ body, html {
     }
 
 .TürRaum1{
-    width: 450px;
-    height: 800px;
+    width: 300px;
+    height: 600px;
     margin-right: 200px;
+    left: 700px;
+    top: 230px;
     background: none;
     position: absolute;
     border: none;
@@ -43,9 +45,10 @@ body, html {
     z-index: 1;
 }
 .BuchschrankRaum1 {
+    top: 100px;
+    left: 1500px;
     width: 400px;
     height: 750px;
-    margin-left: 1500px;
     margin-bottom: 100px;
     background: none;
     position: absolute;
@@ -55,9 +58,11 @@ body, html {
 }
 .FensterRaum1{
     width: 200px;
-    height: 500px;
+    height: 200px;
+    left: 50px;
     margin-right: 1900px;
     margin-bottom: 600px;
+    top: 150px;
     background: none;
     position: absolute;
     border: none;
@@ -66,10 +71,10 @@ body, html {
 }
 
 .KisteRaum1{
-    width: 350px;
-    height: 350px;
-    margin-right: 1600px;
-    margin-top: 800px;
+    width: 200px;
+    height: 200px;
+    top: 625px;
+    left: 200px;
     background: none;
     position: absolute;
     border: none;

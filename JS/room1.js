@@ -13,16 +13,34 @@ let schlüsselStatus = false;
 let tippSound = new Audio("../Audios/399097__rulfer__click.wav");
 tippSound.volume = 0.5;
 
+function playTippSound() {
+    try {
+        tippSound.currentTime = 0;
+        tippSound.play();
+    } catch (e) {
+        // Fehler ignorieren
+    }
+}
+
 function typeWriter() {
     if (i < text.length) {
         cursor.insertAdjacentText("beforebegin", text.charAt(i));
+        playTippSound();
         i++;
         setTimeout(typeWriter, speed);
     }
 }
 
+function unsichtbarMachen(button) {
+    button.style.width = '100px';
+    button.style.height = '100px';
+    button.style.backgroundColor = 'transparent';
+    button.style.border = 'none';
+    button.style.opacity = '0';
+    button.style.cursor = 'pointer';
+}
+
 window.onload = () => {
-    positioniereButtons();
     typeWriter();
 };
 
@@ -53,11 +71,11 @@ function zeigeText(text) {
         if (text !== 'Du gehst weiter.') {
             textDiv.style.display = 'none';
         }
-    }, 1500);
+    }, 1000);
 }
 
 function schlüsselGefunden() {
-    schlüsselStatus = true
-    zeigeText('Du hast die Kiste geöffnet. Vielleicht kannst du jetzt weiter.');
+    schlüsselStatus = true;
+    zeigeText('Du hast die Kiste geöffnet. Vielleicht kannst du jetzt weitergehen.');
     document.getElementById('weiterText').style.display = 'block';
 }
