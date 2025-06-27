@@ -18,7 +18,7 @@ function playTippSound() {
         tippSound.currentTime = 0;
         tippSound.play();
     } catch (e) {
-        // Fehler ignorieren
+
     }
 }
 
